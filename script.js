@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
                           </div>
                       </div>
                       <div class="relative">
-                          <img src="https://i.imghippo.com/files/fWIw1889L.JPG" alt="Profile" class="rounded-2xl" width="500" height="600">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhmQuVx235_YgiZBbG7BPiA22a7EjlV4qUg&s" alt="Profile" class="rounded-2xl" width="500" height="600">
                       </div>
                   </div>
               </div>
