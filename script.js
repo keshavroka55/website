@@ -68,8 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Page render functions
     function renderHomePage() {
         // Cache-busting for image URL
-      const imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhmQuVx235_YgiZBbG7BPiA22a7EjlV4qUg&s"
-      console.log("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhmQuVx235_YgiZBbG7BPiA22a7EjlV4qUg&s", imageUrl); // Debug the image path
+     // const imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhmQuVx235_YgiZBbG7BPiA22a7EjlV4qUg&s"
+      //console.log("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhmQuVx235_YgiZBbG7BPiA22a7EjlV4qUg&s", imageUrl); // Debug the image path
       content.innerHTML = `
               <div class="container mx-auto px-4 py-16">
                   <div class="grid md:grid-cols-2 gap-8 items-center">
