@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                   <i data-lucide="facebook" class="w-6 h-6"></i>
                               </a>
                               <!-- Instagram Link -->
-                              <a href="www.linkedin.com/in/keshav-roka-951699312" target="_blank" class="p-2 bg-zinc-800 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
+                              <a href="www.linkedin.com/in/keshav-roka-951699312/" target="_blank" class="p-2 bg-zinc-800 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
                                   <i data-lucide="instagram" class="w-6 h-6"></i>
                               </a>
                           </div>
