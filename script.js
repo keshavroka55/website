@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
                           </div>
                       </div>
                       <div class="relative">
-                          <img src="keshav.JPG" alt="Profile" class="rounded-2xl" width="500" height="600">
+                          <img src="/keshav.JPG" alt="Profile" class="rounded-2xl" width="500" height="600">
                       </div>
                   </div>
               </div>
