@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Cache-busting for image URL
         // the changes in this image path.... keshav
       const imageUrl = "https://i.imghippo.com/files/OKFr2612Fs.JPG"
-      console.log("D:\personal wedsite\final\keshav.JPG:", imageUrl); // Debug the image path
+      console.log("https://i.imghippo.com/files/fWIw1889L.JPG:", imageUrl); // Debug the image path
       content.innerHTML = `
               <div class="container mx-auto px-4 py-16">
                   <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
                           </div>
                       </div>
                       <div class="relative">
-                          <img src="/keshav.JPG" alt="Profile" class="rounded-2xl" width="500" height="600">
+                          <img src="https://i.imghippo.com/files/fWIw1889L.JPG" alt="Profile" class="rounded-2xl" width="500" height="600">
                       </div>
                   </div>
               </div>
