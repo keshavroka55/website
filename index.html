@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Roka</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQg-XcmYETjPQHi9mQ4rHtLNODXBL3KWHJYA&s" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-zinc-900/80 backdrop-blur-sm border-b border-zinc-800">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="text-2xl font-bold text-zinc-100">K&R</div>
+                <div class="hidden md:flex items-center space-x-8" id="desktop-menu"></div>
+                <button class="md:hidden text-zinc-300" id="mobile-menu-button">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden fixed top-16 left-0 right-0 bg-zinc-900 border-b border-zinc-800 md:hidden z-40">
+            <div class="px-4 py-2" id="mobile-menu-items"></div>
+        </div>
+    </nav>
+
+    <main class="pt-16">
+        <div id="content"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

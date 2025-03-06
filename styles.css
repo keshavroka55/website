@@ -1,0 +1,307 @@
+:root {
+    --background: #18181b;
+    --text: #f4f4f5;
+    --primary: #3b82f6;
+    --secondary: #52525b;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .fixed {
+    position: fixed;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .top-16 {
+    top: 4rem;
+  }
+  
+  .left-0 {
+    left: 0;
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+  
+  .z-50 {
+    z-index: 50;
+  }
+  
+  .z-40 {
+    z-index: 40;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .space-x-8 > * + * {
+    margin-left: 2rem;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .h-16 {
+    height: 4rem;
+  }
+  
+  .rounded-2xl {
+    border-radius: 1rem;
+  }
+  
+  .bg-zinc-900\/80 {
+    background-color: rgba(24, 24, 27, 0.8);
+  }
+  
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+  
+  .border-b {
+    border-bottom-width: 1px;
+  }
+  
+  .border-zinc-800 {
+    border-color: #27272a;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .text-zinc-100 {
+    color: #f4f4f5;
+  }
+  
+  .text-zinc-300 {
+    color: #d4d4d8;
+  }
+  
+  .text-zinc-400 {
+    color: #a1a1aa;
+  }
+  
+  .text-zinc-500 {
+    color: #71717a;
+  }
+  
+  .text-blue-500 {
+    color: var(--primary);
+  }
+  
+  .pt-16 {
+    padding-top: 4rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+  .mb-12 {
+    margin-bottom: 3rem;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+  
+  .text-6xl {
+    font-size: 3.75rem;
+  }
+  
+  .gap-8 {
+    gap: 2rem;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .bg-zinc-800 {
+    background-color: #27272a;
+  }
+  
+  .p-2 {
+    padding: 0.5rem;
+  }
+  
+  .w-6 {
+    width: 1.5rem;
+  }
+  
+  .h-6 {
+    height: 1.5rem;
+  }
+  
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+  
+  .bg-zinc-700 {
+    background-color: #3f3f46;
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .rounded-xl {
+    border-radius: 0.75rem;
+  }
+  
+  .max-w-2xl {
+    max-width: 42rem;
+  }
+  
+  .max-w-3xl {
+    max-width: 48rem;
+  }
+  
+  button,
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+  
+  .button-primary {
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  .button-primary:hover {
+    background-color: #2563eb;
+  }
+  
+  .button-outline {
+    border: 1px solid var(--secondary);
+    background-color: transparent;
+    color: var(--text);
+  }
+  
+  .button-outline:hover {
+    background-color: var(--secondary);
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: rgba(39, 39, 42, 0.5);
+    border-radius: 0.5rem;
+    border: 1px solid #3f3f46;
+    color: white;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  }
+  
+  @media (min-width: 768px) {
+    .md\:flex {
+      display: flex;
+    }
+  
+    .md\:hidden {
+      display: none;
+    }
+  
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+ img {
+  position: relative;
+  left: 160px;
+ }
