@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
                               <br />a Software Developer.
                           </h1>
                           <p class="text-zinc-400 mb-6">
-                              I am a software engineer student. I am very intrested in developing API and main in AI and machine learning.
+                              As a software engineer, I have a strong passion for artificial intelligence and machine learning. I enjoy creating intelligent solutions that solve real-world problems and am particularly motivated by opportunities to design and build smart, data-driven systems with real impact.
                           </p>
                           <div class="flex space-x-4">
                               <a href="http://github.com/keshavroka55" class="p-2 bg-zinc-800 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
@@ -95,11 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
                               <!-- Facebook Link -->
                               <a href="https://www.facebook.com/profile.php?id=100056764401853" target="_blank" class="p-2 bg-zinc-800 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
                                   <i data-lucide="facebook" class="w-6 h-6"></i>
-                              </a>
-                              <!-- Instagram Link -->
-                              <a href="www.linkedin.com/in/keshav-roka-951699312/" target="_blank" class="p-2 bg-zinc-800 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
-                                  <i data-lucide="instagram" class="w-6 h-6"></i>
-                              </a>
+                             
                           </div>
                       </div>
                       <div class="relative">
@@ -115,38 +111,64 @@ document.addEventListener("DOMContentLoaded", () => {
         }
   // the part to inset the features or attibutes that you have 
     function renderSkillsPage() {
-      const features = [
-        {
-          icon: "code",
-          title: "Clean Code",
-          description: "Writing clean, maintainable, and efficient code is my top priority.",
-        },
-      ]
-  
-      content.innerHTML = `
-              <div class="container mx-auto px-4 py-16">
-                  <div class="text-center mb-12">
-                      <h1 class="text-4xl font-bold text-white mb-4">Features</h1>
-                      <p class="text-zinc-400">What I bring to the table</p>
-                  </div>
-                  <div class="grid md:grid-cols-3 gap-8">
-                      ${features
-                        .map(
-                          (feature) => `
-                          <div class="p-6 bg-zinc-800/50 rounded-xl">
-                              <div class="text-blue-500 mb-4">
-                                  <i data-lucide="${feature.icon}" class="w-8 h-8"></i>
-                              </div>
-                              <h3 class="text-xl font-semibold text-white mb-2">${feature.title}</h3>
-                              <p class="text-zinc-400">${feature.description}</p>
-                          </div>
-                      `,
-                        )
-                        .join("")}
-                  </div>
+  const features = [
+    {
+      icon: "code",
+      title: "Python",
+      description: "Proficient in Python programming for data science, backend development, and automation.",
+    },
+    {
+      icon: "database",
+      title: "NumPy & Pandas",
+      description: "Skilled in data manipulation, analysis, and efficient numerical computations.",
+    },
+    {
+      icon: "bar-chart",
+      title: "Matplotlib & Seaborn",
+      description: "Capable of creating insightful and attractive data visualizations.",
+    },
+    {
+      icon: "sliders",
+      title: "Scikit-learn",
+      description: "Experienced in applying machine learning models for classification and regression tasks.",
+    },
+    {
+      icon: "cpu",
+      title: "PyTorch & TensorFlow",
+      description: "Hands-on experience with deep learning frameworks for building neural networks.",
+    },
+    {
+      icon: "server",
+      title: "FastAPI",
+      description: "Able to build high-performance APIs with modern Python web frameworks.",
+    },
+  ];
+
+  content.innerHTML = `
+    <div class="container mx-auto px-4 py-16">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-white mb-4">Skills</h1>
+        <p class="text-zinc-400">Technologies and tools I'm proficient in</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        ${features
+          .map(
+            (feature) => `
+            <div class="p-6 bg-zinc-800/50 rounded-xl">
+              <div class="text-blue-500 mb-4">
+                <i data-lucide="${feature.icon}" class="w-8 h-8"></i>
               </div>
+              <h3 class="text-xl font-semibold text-white mb-2">${feature.title}</h3>
+              <p class="text-zinc-400">${feature.description}</p>
+            </div>
           `
-    }
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+}
+
   // adding the project
     function renderProjectPage() {
       const projects = [1] // here increase the number as you increse the number of project.
