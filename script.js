@@ -80,7 +80,9 @@ document.addEventListener("DOMContentLoaded", () => {
                               <br />a Software Developer.
                           </h1>
                           <p class="text-zinc-400 mb-6">
-                              As a software engineer, I have a strong passion for artificial intelligence and machine learning. I enjoy creating intelligent solutions that solve real-world problems and am particularly motivated by opportunities to design and build smart, data-driven systems with real impact.
+                              As a software engineer, I have a strong passion for artificial intelligence and machine learning. 
+                              <br /> I enjoy creating intelligent solutions that solve real-world problems 
+                              <br/> and am particularly motivated by opportunities to design and build smart, data-driven systems with real impact.
                           </p>
                           <div class="flex space-x-4">
                               <a href="http://github.com/keshavroka55" class="p-2 bg-zinc-800 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
