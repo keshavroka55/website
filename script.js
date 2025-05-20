@@ -113,63 +113,87 @@ document.addEventListener("DOMContentLoaded", () => {
         }
   // the part to inset the features or attibutes that you have 
     function renderSkillsPage() {
-  const features = [
+  const skills = [
     {
-      icon: "code",
-      title: "Python",
+      name: "Python",
       description: "Proficient in Python programming for data science, backend development, and automation.",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     },
     {
-      icon: "database",
-      title: "NumPy & Pandas",
-      description: "Skilled in data manipulation, analysis, and efficient numerical computations.",
+      name: "NumPy",
+      description: "Efficient numerical operations and array manipulation for scientific computing.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg",
     },
     {
-      icon: "bar-chart",
-      title: "Matplotlib & Seaborn",
-      description: "Capable of creating insightful and attractive data visualizations.",
+      name: "Pandas",
+      description: "Data manipulation and analysis with powerful data structures for tabular data.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg",
     },
     {
-      icon: "sliders",
-      title: "Scikit-learn",
-      description: "Experienced in applying machine learning models for classification and regression tasks.",
+      name: "Matplotlib",
+      description: "Create static, animated, and interactive visualizations in Python.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg",
     },
     {
-      icon: "cpu",
-      title: "PyTorch & TensorFlow",
-      description: "Hands-on experience with deep learning frameworks for building neural networks.",
+      name: "Seaborn",
+      description: "Statistical data visualization based on matplotlib with a high-level interface.",
+      logo: "https://seaborn.pydata.org/_static/logo-wide-lightbg.svg",
     },
     {
-      icon: "server",
-      title: "FastAPI",
-      description: "Able to build high-performance APIs with modern Python web frameworks.",
+      name: "Scikit-learn",
+      description: "Experienced with machine learning algorithms for classification and regression.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+    },
+    {
+      name: "PyTorch",
+      description: "Build and train deep learning models with dynamic computational graphs.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg",
+    },
+    {
+      name: "TensorFlow",
+      description: "End-to-end open source platform for machine learning and deep neural networks.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
+    },
+    {
+      name: "FastAPI",
+      description: "Build high-performance APIs using modern Python web tools.",
+      logo: "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png",
     },
   ];
 
+  const content = document.getElementById("content"); // make sure this element exists in your HTML
+
   content.innerHTML = `
-    <div class="container mx-auto px-4 py-16">
+    <section class="py-16 px-4 max-w-7xl mx-auto">
       <div class="text-center mb-12">
-        <h1 class="text-4xl font-bold text-white mb-4">Skills</h1>
-        <p class="text-zinc-400">Technologies and tools I'm proficient in</p>
+        <h2 class="text-3xl font-bold mb-2 text-white">Skills</h2>
+        <p class="text-lg text-zinc-400">Technologies and tools I'm proficient in</p>
       </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        ${features
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        ${skills
           .map(
-            (feature) => `
-            <div class="p-6 bg-zinc-800/50 rounded-xl">
-              <div class="text-blue-500 mb-4">
-                <i data-lucide="${feature.icon}" class="w-8 h-8"></i>
-              </div>
-              <h3 class="text-xl font-semibold text-white mb-2">${feature.title}</h3>
-              <p class="text-zinc-400">${feature.description}</p>
+            (skill) => `
+          <div class="bg-zinc-800/50 rounded-lg p-6 transition-transform hover:scale-105">
+            <div class="flex items-center justify-center h-16 mb-4">
+              <img
+                src="${skill.logo}"
+                alt="${skill.name} logo"
+                class="h-12 object-contain"
+                onerror="this.src='/placeholder.svg'"
+              />
             </div>
-          `
+            <h3 class="text-xl font-semibold text-white text-center mb-2">${skill.name}</h3>
+            <p class="text-zinc-400 text-center">${skill.description}</p>
+          </div>
+        `
           )
           .join("")}
       </div>
-    </div>
+    </section>
   `;
 }
+
 
   // adding the project
     function renderProjectPage() {
@@ -201,7 +225,8 @@ document.addEventListener("DOMContentLoaded", () => {
           `
     }
 
-  // here is the part write you full experences and skills that you have.
+  // here Resume one.
+    // short version of cv certifications of skills that you have.
     function renderResumePage() {
       const experiences = [
         {
