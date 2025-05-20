@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <img
                 src="${skill.logo}"
                 alt="${skill.name} logo"
-                class="h-12 object-contain"
+                class="h-5 w-5 object-contain"
                 onerror="this.src='/placeholder.svg'"
               />
             </div>
