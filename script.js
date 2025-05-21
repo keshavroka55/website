@@ -119,46 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "Proficient in Python programming for data science, backend development, and automation.",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     },
-    {
-      name: "NumPy",
-      description: "Efficient numerical operations and array manipulation for scientific computing.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg",
-    },
-    {
-      name: "Pandas",
-      description: "Data manipulation and analysis with powerful data structures for tabular data.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg",
-    },
-    {
-      name: "Matplotlib",
-      description: "Create static, animated, and interactive visualizations in Python.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg",
-    },
-    {
-      name: "Seaborn",
-      description: "Statistical data visualization based on matplotlib with a high-level interface.",
-      logo: "https://seaborn.pydata.org/_static/logo-wide-lightbg.svg",
-    },
-    {
-      name: "Scikit-learn",
-      description: "Experienced with machine learning algorithms for classification and regression.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
-    },
-    {
-      name: "PyTorch",
-      description: "Build and train deep learning models with dynamic computational graphs.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg",
-    },
-    {
-      name: "TensorFlow",
-      description: "End-to-end open source platform for machine learning and deep neural networks.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
-    },
-    {
-      name: "FastAPI",
-      description: "Build high-performance APIs using modern Python web tools.",
-      logo: "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png",
-    },
+   
   ];
 
   const content = document.getElementById("content"); // make sure this element exists in your HTML
